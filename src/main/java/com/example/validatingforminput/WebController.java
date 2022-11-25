@@ -29,5 +29,10 @@ public class WebController implements WebMvcConfigurer {
 		}
 		return "redirect:/results";
 	}
+	
+	@GetMapping("/test/test")
+	public String testTest() {
+		return "test/test";
+	}
 
 }
